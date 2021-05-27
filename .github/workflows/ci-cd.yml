@@ -62,7 +62,7 @@ jobs:
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
           task-definition: ${{ steps.task-def.outputs.task-definition }}
-          service: microservice-rest-petstore
+          service: microservice-rest-petstore-service
           cluster: default
           wait-for-service-stability: true
                 
