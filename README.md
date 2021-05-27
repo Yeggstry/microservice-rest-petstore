@@ -1,5 +1,5 @@
 # Petstore - REST Microservice
-A petstore microservice, exposing by a REST API. Created as a recruitment exercise.
+A petstore microservice, exposing a REST API. Created as a recruitment exercise.
 ## Brief
 We would like you to write a simple REST microservice. It can be kept simple but will need to support both the querying and capture of data, which is validated and persisted.
 
@@ -54,6 +54,7 @@ These ideas can be used to both enhance the service and to provide a higher qual
 * Enable HTTPS.
 * Caching of GET requests (either via the application or via API Gateway).
 * Logging
+* Create release artifact within github.
 
 ## Development Timeline
 The following timeline provides a view into how this service was developed.
