@@ -80,6 +80,6 @@ During the development of this service the [Pomodoro Technique](https://en.wikip
 11. Intial work on deploying to ECS Fargate, including configuration on AWS.
 12. Creating task definition for deployment, and configuration of VPC.
 13. Creation of ECS cluster.
-14. Testing included task definition.
+14. Testing of included task definition and CD workflow.
 
-Total time: 10 pomodoros x 25 mins = 250 mins = 4.2 hours
+Total time: 14 pomodoros x 25 mins = 350 mins = 5.8 hours
