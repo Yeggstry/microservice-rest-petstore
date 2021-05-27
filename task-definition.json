@@ -4,7 +4,7 @@
 	"containerDefinitions": [
 		{
 			"name": "microservice-rest-petstore-service",
-			"image": "110726803072.dkr.ecr.us-east-1.amazonaws.com/yeggstry/microservice-rest-petstore:latest",
+			"image": "110726803072.dkr.ecr.us-east-1.amazonaws.com\/yeggstry\/microservice-rest-petstore:latest",
 			"portMappings": [
 				{
 					"containerPort": 8080,
