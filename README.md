@@ -54,7 +54,8 @@ These ideas can be used to both enhance the service and to provide a higher qual
 * Enable HTTPS.
 * Caching of GET requests (either via the application or via API Gateway).
 * Logging
-* Create release artifact within github.
+* Create release artifact within Github.
+* Create a more effective release process for multiple environments in Github.
 
 ## Development Timeline
 The following timeline provides a view into how this service was developed.
@@ -70,5 +71,6 @@ During the development of this service the [Pomodoro Technique](https://en.wikip
 7. Corrected validation for name and breed (using Size annotation instead of Max).
 8. Added README.md, including tidying up design, instructions and usage.
 9. Create Git Repo and push to Github. Create initial Dockerfile.
+10. Github Action to push docker image to AWS ECR.
 
-Total time: 8 pomodoros x 25 mins = 200 mins = 3.33 hours
+Total time: 10 pomodoros x 25 mins = 250 mins = 4.2 hours
