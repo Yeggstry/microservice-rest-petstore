@@ -34,6 +34,7 @@ In order to run this application in a development environment the following appl
 * [Git 2.31.1](https://git-scm.com/downloads)
 * [Maven 3.8.1](https://maven.apache.org/download.cgi)
 * [Eclipse IDE 2021-03](https://www.eclipse.org/downloads/) (optional)
+* [AWS CLI v2](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) (optional, for deploying to AWS)
 
 *Note*: The initial project was created using [Spring initializr](https://start.spring.io/).
 
@@ -43,6 +44,8 @@ The following URLs provide access to the microservice:
 
 * [OpenAPI definition](http://localhost:8080/v3/api-docs/)
 * [Swagger UI](http://localhost:8080/swagger-ui.html)
+
+For deploying to AWS, the main configuration required is defined in the [Github Action: AWS Fargate](https://aws.amazon.com/blogs/opensource/github-actions-aws-fargate/) article.
 
 ## Future Development Ideas
 These ideas can be used to both enhance the service and to provide a higher quality service for use in a production environment.
@@ -56,6 +59,8 @@ These ideas can be used to both enhance the service and to provide a higher qual
 * Logging
 * Create release artifact within Github.
 * Create a more effective release process for multiple environments in Github.
+* Use infrastructure-as-code with AWS Cloudformation.
+* Create docker image for use in a development environment (i.e. as similar as possible to "production").
 
 ## Development Timeline
 The following timeline provides a view into how this service was developed.
@@ -72,5 +77,9 @@ During the development of this service the [Pomodoro Technique](https://en.wikip
 8. Added README.md, including tidying up design, instructions and usage.
 9. Create Git Repo and push to Github. Create initial Dockerfile.
 10. Github Action to push docker image to AWS ECR.
+11. Intial work on deploying to ECS Fargate, including configuration on AWS.
+12. Creating task definition for deployment, and configuration of VPC.
+13. Creation of ECS cluster.
+14. Testing included task definition.
 
 Total time: 10 pomodoros x 25 mins = 250 mins = 4.2 hours

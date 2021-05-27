@@ -1,0 +1,22 @@
+{
+	"family": "yeggstry",
+	"networkMode": "awsvpc",
+	"containerDefinitions": [
+		{
+			"name": "microservice-rest-petstore-service",
+			"image": "yeggstry/microservice-rest-petstore:latest",
+			"portMappings": [
+				{
+					"containerPort": 8080,
+					"protocol": "tcp"
+				}
+			],
+			"essential": true
+		}
+	],
+	"requiresCompatibilities": [
+		"FARGATE"
+	],
+	"cpu": "256",
+	"memory": "512"
+}
