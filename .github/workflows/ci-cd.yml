@@ -5,6 +5,8 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      ECR_REPO: yeggstry/microservice-rest-petstore
 
     steps:
       - uses: actions/checkout@v2
@@ -40,7 +42,7 @@ jobs:
       - name: Build, tag, and push image to Amazon ECR
         env:
            ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-           ECR_REPOSITORY: yeggstry/microservice-rest-petstore
+           ECR_REPOSITORY: ${{ env.ECR_REPO }}
            IMAGE_TAG: ${{ github.sha }}
         run: |
            docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -t $ECR_REGISTRY/$ECR_REPOSITORY:latest .
@@ -54,7 +56,7 @@ jobs:
         with:
           task-definition: task-definition.json
           container-name: microservice-rest-petstore-service
-          image: $ECR_REGISTRY/$ECR_REPOSITORY:latest
+          image: ${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPO }}:latest
   
       - name: Deploy Amazon ECS task definition
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
