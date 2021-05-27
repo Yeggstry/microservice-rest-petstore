@@ -81,5 +81,6 @@ During the development of this service the [Pomodoro Technique](https://en.wikip
 12. Creating task definition for deployment, and configuration of VPC.
 13. Creation of ECS cluster.
 14. Testing of included task definition and CD workflow.
+15. Completion of CD workflow.
 
-Total time: 14 pomodoros x 25 mins = 350 mins = 5.8 hours
+Total time: 15 pomodoros x 25 mins = 375 mins = 6.25 hours
