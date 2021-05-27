@@ -69,6 +69,6 @@ During the development of this service the [Pomodoro Technique](https://en.wikip
 6. Added error handling for controllers. Added validation for Pet.
 7. Corrected validation for name and breed (using Size annotation instead of Max).
 8. Added README.md, including tidying up design, instructions and usage.
-9. 
+9. Create Git Repo and push to Github. Create initial Dockerfile.
 
 Total time: 8 pomodoros x 25 mins = 200 mins = 3.33 hours
