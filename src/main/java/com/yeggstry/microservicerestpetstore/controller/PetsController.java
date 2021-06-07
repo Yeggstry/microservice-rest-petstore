@@ -24,7 +24,7 @@ public class PetsController {
 	private PetRepository repository;
 
 	@GetMapping("/")
-	public Iterable<Pet> findBooks() {
+	public Iterable<Pet> findPets() {
 		return repository.findAll();
 	}
 
